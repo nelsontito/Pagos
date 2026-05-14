@@ -714,9 +714,17 @@
     <Content Include="imgqr\verqr.jpeg" />
     <Content Include="Inicio.aspx" />
     <Content Include="js\HomeMaster.js" />
+    <Content Include="js\PageCarreras.js" />
     <Content Include="js\PageEstudiantes.js" />
+    <Content Include="js\PageGestiones.js" />
+    <Content Include="js\PageGrados.js" />
+    <Content Include="js\PageInscripciones.js" />
     <Content Include="js\PageUsuario.js" />
+    <Content Include="PageCarreras.aspx" />
     <Content Include="PageEstudiantes.aspx" />
+    <Content Include="PageGestiones.aspx" />
+    <Content Include="PageGrados.aspx" />
+    <Content Include="PageInscripciones.aspx" />
     <Content Include="PageUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -735,12 +743,40 @@
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PageCarreras.aspx.cs">
+      <DependentUpon>PageCarreras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageCarreras.aspx.designer.cs">
+      <DependentUpon>PageCarreras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PageEstudiantes.aspx.cs">
       <DependentUpon>PageEstudiantes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PageEstudiantes.aspx.designer.cs">
       <DependentUpon>PageEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageGestiones.aspx.cs">
+      <DependentUpon>PageGestiones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageGestiones.aspx.designer.cs">
+      <DependentUpon>PageGestiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageGrados.aspx.cs">
+      <DependentUpon>PageGrados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageGrados.aspx.designer.cs">
+      <DependentUpon>PageGrados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageInscripciones.aspx.cs">
+      <DependentUpon>PageInscripciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageInscripciones.aspx.designer.cs">
+      <DependentUpon>PageInscripciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageUsuarios.aspx.cs">
       <DependentUpon>PageUsuarios.aspx</DependentUpon>

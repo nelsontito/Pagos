@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NCarreras.cs" />
     <Compile Include="NEstudiantes.cs" />
+    <Compile Include="NGestiones.cs" />
     <Compile Include="NGrados.cs" />
     <Compile Include="NUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

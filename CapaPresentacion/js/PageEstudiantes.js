@@ -293,7 +293,7 @@ function enviarAjaxEstudiantes(objeto, base64String) {
             if (response.d.Estado) {
                 $("#mdData").modal("hide");
                 idEditar = 0;
-                ListarEstudiantes();
+                tablaData.ajax.reload(null, false);
             }
         },
         error: function () {

@@ -147,11 +147,22 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect">
                                 <i class="mdi mdi-library-books"></i>
-                                <span>Académico</span>
+                                <span>Gestiones</span>
                                 <span class="float-right"><i class="mdi mdi-plus"></i></span>
                             </a>
                             <ul class="list-unstyled">
-                                <li><a href="PageNivelAcademico.aspx">Niveles Académicos</a></li>
+                                <li><a href="PageGestiones.aspx">Gestiones</a></li>
+                                <%--<li><a href="PageCarreras.aspx">Carreras</a></li>--%>
+                            </ul>
+                        </li>
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect">
+                                <i class="mdi mdi-library-books"></i>
+                                <span>Nivel Academico</span>
+                                <span class="float-right"><i class="mdi mdi-plus"></i></span>
+                            </a>
+                            <ul class="list-unstyled">
+                                <li><a href="PageGrados.aspx">Grados Academicos</a></li>
                                 <li><a href="PageCarreras.aspx">Carreras</a></li>
                             </ul>
                         </li>

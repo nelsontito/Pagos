@@ -88,9 +88,9 @@
                         <i class="mdi mdi-link-variant mr-2"></i>Accesos Rápidos
                     </h3>
                 </div>
-<%--                <div class="card-body">
-                    <a href="PageEstudiantes.aspx" class="btn btn-primary btn-sm mr-2">
-                        <i class="mdi mdi-school mr-1"></i> Estudiantes
+                <div class="card-body">
+                    <a href="PageGrados.aspx" class="btn btn-primary btn-sm mr-2">
+                        <i class="mdi mdi-school mr-1"></i> Grados
                     </a>
 
                     <a href="PageCarreras.aspx" class="btn btn-info btn-sm mr-2">
@@ -100,7 +100,7 @@
                     <a href="PageUsuario.aspx" class="btn btn-success btn-sm">
                         <i class="mdi mdi-account-multiple mr-1"></i> Usuarios
                     </a>
-                </div>--%>
+                </div>
             </div>
         </div>
     </div>

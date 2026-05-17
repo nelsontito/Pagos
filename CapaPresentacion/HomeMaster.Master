@@ -174,7 +174,7 @@
                             <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-table"></i><span>Inscripciones </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a href="PageInscripciones.aspx">Inscripciones</a></li>
-                                <li><a href="PageReporte.aspx">Reporte</a></li>
+                                <li><a href="PagePagos.aspx">Pagos</a></li>
                             </ul>
                         </li>
                         <li class="has_sub">

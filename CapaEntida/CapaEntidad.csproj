@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ConsulMenDTO.cs" />
     <Compile Include="DTOs\EEstudiantesDTO.cs" />
     <Compile Include="Entidades\ECarreras.cs" />
     <Compile Include="Entidades\EEstudiantes.cs" />
@@ -54,6 +55,5 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Responses\Respuesta.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

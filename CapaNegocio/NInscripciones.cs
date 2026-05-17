@@ -1,4 +1,5 @@
 ﻿using CapaDatos;
+using CapaEntida.DTOs;
 using CapaEntida.Entidades;
 using CapaEntida.Responses;
 using System;
@@ -25,6 +26,16 @@ namespace CapaNegocio
             return conexion;
         }
         #endregion}
+
+        public Respuesta<int> PagarMensualidad(int IdControl)
+        {
+            return DInscripciones.GetInstance().PagarMensualidad(IdControl);
+        }
+
+        public Respuesta<List<ConsulMenDTO>> ConsultaMensualidad(string Codigo)
+        {
+            return DInscripciones.GetInstance().ConsultaMensualidad(Codigo);
+        }
 
         public Respuesta<int> Registrar(EInscripciones oModel)
         {

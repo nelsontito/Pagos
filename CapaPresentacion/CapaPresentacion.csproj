@@ -719,12 +719,14 @@
     <Content Include="js\PageGestiones.js" />
     <Content Include="js\PageGrados.js" />
     <Content Include="js\PageInscripciones.js" />
+    <Content Include="js\PagePagos.js" />
     <Content Include="js\PageUsuario.js" />
     <Content Include="PageCarreras.aspx" />
     <Content Include="PageEstudiantes.aspx" />
     <Content Include="PageGestiones.aspx" />
     <Content Include="PageGrados.aspx" />
     <Content Include="PageInscripciones.aspx" />
+    <Content Include="PagePagos.aspx" />
     <Content Include="PageUsuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -777,6 +779,13 @@
     </Compile>
     <Compile Include="PageInscripciones.aspx.designer.cs">
       <DependentUpon>PageInscripciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagePagos.aspx.cs">
+      <DependentUpon>PagePagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagePagos.aspx.designer.cs">
+      <DependentUpon>PagePagos.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageUsuarios.aspx.cs">
       <DependentUpon>PageUsuarios.aspx</DependentUpon>

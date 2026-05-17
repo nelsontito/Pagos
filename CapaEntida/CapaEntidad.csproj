@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DTOs\ConsulMenDTO.cs" />
     <Compile Include="DTOs\EEstudiantesDTO.cs" />
+    <Compile Include="DTOs\RequestDTO.cs" />
     <Compile Include="Entidades\ECarreras.cs" />
     <Compile Include="Entidades\EEstudiantes.cs" />
     <Compile Include="Entidades\EGestiones.cs" />

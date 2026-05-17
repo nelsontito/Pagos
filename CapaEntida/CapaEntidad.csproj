@@ -46,6 +46,7 @@
     <Compile Include="Entidades\EEstudiantes.cs" />
     <Compile Include="Entidades\EGestiones.cs" />
     <Compile Include="Entidades\EGrados.cs" />
+    <Compile Include="Entidades\EInscripciones.cs" />
     <Compile Include="Entidades\EMeses.cs" />
     <Compile Include="Entidades\ERoles.cs" />
     <Compile Include="Entidades\ESemestres.cs" />

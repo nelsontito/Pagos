@@ -37,5 +37,25 @@ namespace CapaPresentacion.Api
             var respuesta = NInscripciones.GetInstance().ConsultaMensualidad(request.Codigo);
             return Ok(respuesta);
         }
+        [HttpPost]
+        [Route("infoEst")]
+        public IHttpActionResult PostInfoEst(RequestDTO request)
+        {
+            if (request == null || string.IsNullOrEmpty(request.Codigo))
+            {
+                var respuestaError = new Respuesta<EstudianteResponseDTO>
+                {
+                    Estado = false,
+                    Mensaje = "No se obtuvo datos del codigo QR.",
+                    Data = null
+                };
+
+                return Ok(respuestaError);
+            }
+
+            var respuesta = NEstudiantes.GetInstance().BuscarCodigoEstudiante(request.Codigo);
+            return Ok(respuesta);
+
+        }
     }
 }

@@ -41,5 +41,10 @@ namespace CapaNegocio
         {
             return DEstudiantes.GetInstance().GuardarOrEditEstudiantes(oModel);
         }
+
+        public Respuesta<EstudianteResponseDTO> BuscarCodigoEstudiante(string Codigo)
+        {
+            return DEstudiantes.GetInstance().BuscarCodigoEstudiante(Codigo);
+        }
     }
 }

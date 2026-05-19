@@ -209,5 +209,55 @@ namespace CapaDatos
         }
 
 
+        public Respuesta<EstudianteResponseDTO> BuscarCodigoEstudiante(string Codigo)
+        {
+            try
+            {
+                EstudianteResponseDTO obj = null;
+
+                using (SqlConnection con = ConexionBD.GetInstance().ConexionDB())
+                {
+                    using (SqlCommand comando = new SqlCommand("usp_BuscarEstCodigo", con))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        comando.Parameters.AddWithValue("@Codigo", Codigo);
+
+                        con.Open();
+                        using (SqlDataReader dr = comando.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                obj = new EstudianteResponseDTO
+                                {
+                                    IdEstudiante = Convert.ToInt32(dr["IdEstudiante"]),
+                                    Nombres = dr["Nombres"].ToString(),
+                                    Apellidos = dr["Apellidos"].ToString(),
+                                    Codigo = dr["Codigo"].ToString(),
+                                    ImagenEstUrl = dr["ImagenEstUrl"].ToString()
+                                };
+                            }
+                        }
+                    }
+                }
+
+                return new Respuesta<EstudianteResponseDTO>
+                {
+                    Estado = obj != null,
+                    Data = obj,
+                    Mensaje = obj != null ? "Estudiante Encontrado" : "Estudiante Encontrado"
+                };
+            }
+            catch (Exception)
+            {
+                return new Respuesta<EstudianteResponseDTO>
+                {
+                    Estado = false,
+                    Mensaje = "Ocurrió un error en el servidor. Intente más tarde.",
+                    Data = null
+                };
+            }
+        }
+
+
     }
 }

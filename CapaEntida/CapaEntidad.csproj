@@ -54,6 +54,7 @@
     <Compile Include="Entidades\ESemestres.cs" />
     <Compile Include="Entidades\EUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\EstudianteResponseDTO.cs" />
     <Compile Include="Responses\Respuesta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

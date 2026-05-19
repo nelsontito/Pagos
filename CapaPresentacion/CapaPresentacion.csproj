@@ -747,6 +747,7 @@
     <Content Include="js\PageInscripciones.js" />
     <Content Include="js\PagePagos.js" />
     <Content Include="js\PageUsuario.js" />
+    <Content Include="Login.aspx" />
     <Content Include="PageCarreras.aspx" />
     <Content Include="PageEstudiantes.aspx" />
     <Content Include="PageGestiones.aspx" />
@@ -775,6 +776,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="PageCarreras.aspx.cs">
       <DependentUpon>PageCarreras.aspx</DependentUpon>

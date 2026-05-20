@@ -45,9 +45,11 @@
     <Compile Include="DTOs\EEstudiantesDTO.cs" />
     <Compile Include="DTOs\RequestDTO.cs" />
     <Compile Include="Entidades\ECarreras.cs" />
+    <Compile Include="Entidades\EDashboard.cs" />
     <Compile Include="Entidades\EEstudiantes.cs" />
     <Compile Include="Entidades\EGestiones.cs" />
     <Compile Include="Entidades\EGrados.cs" />
+    <Compile Include="Entidades\EInicio.cs" />
     <Compile Include="Entidades\EInscripciones.cs" />
     <Compile Include="Entidades\EMeses.cs" />
     <Compile Include="Entidades\ERoles.cs" />

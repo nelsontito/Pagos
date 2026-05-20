@@ -14,7 +14,7 @@
                 </div>
                 <div class="card-body p-t-10">
                     <h2 class="m-t-0 m-b-15">
-                        <i class="mdi mdi-school text-primary m-r-10"></i><b>0</b>
+                        <i class="mdi mdi-school text-primary m-r-10"></i><<b id="lblTotalEstudiantes">0</b>
                     </h2>
                     <p class="text-muted m-b-0 m-t-20">Total de estudiantes activos</p>
                 </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="card-body p-t-10">
                     <h2 class="m-t-0 m-b-15">
-                        <i class="mdi mdi-account-multiple text-success m-r-10"></i><b>0</b>
+                        <i class="mdi mdi-account-multiple text-success m-r-10"></i><b id="lblTotalUsuarios">0</b>
                     </h2>
                     <p class="text-muted m-b-0 m-t-20">Personal con acceso al sistema</p>
                 </div>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="card-body p-t-10">
                     <h2 class="m-t-0 m-b-15">
-                        <i class="mdi mdi-library-books text-info m-r-10"></i><b>0</b>
+                        <i class="mdi mdi-library-books text-info m-r-10"></i><b id="lblTotalCarreras">0</b>
                     </h2>
                     <p class="text-muted m-b-0 m-t-20">Carreras registradas</p>
                 </div>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="card-body p-t-10">
                     <h2 class="m-t-0 m-b-15">
-                        <i class="mdi mdi-cash-multiple text-warning m-r-10"></i><b>0</b>
+                        <i class="mdi mdi-cash-multiple text-warning m-r-10"></i><b id="lblTotalMensualidades">0</b>
                     </h2>
                     <p class="text-muted m-b-0 m-t-20">Pagos pendientes o registrados</p>
                 </div>
@@ -107,4 +107,5 @@
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="footer" runat="server">
+    <script src="js/Inicio.js?v=<%= DateTime.Now.ToString("yyyyMMddHHmmss") %>" type="text/javascript"></script>
 </asp:Content>

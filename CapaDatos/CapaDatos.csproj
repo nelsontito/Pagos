@@ -46,6 +46,7 @@
     <Compile Include="DEstudiantes.cs" />
     <Compile Include="DGestiones.cs" />
     <Compile Include="DGrados.cs" />
+    <Compile Include="DInicio.cs" />
     <Compile Include="DInscripciones.cs" />
     <Compile Include="DUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

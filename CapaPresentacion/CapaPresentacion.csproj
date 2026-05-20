@@ -735,11 +735,14 @@
     <Content Include="assets\pluginzero\toastr\toastr.min.js" />
     <Content Include="assets\splash-icon.png" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\imagenemi.png" />
     <Content Include="Imagenes\images.png" />
     <Content Include="ImgEstudiantes\baltazar.jpg" />
     <Content Include="imgqr\verqr.jpeg" />
     <Content Include="Inicio.aspx" />
     <Content Include="js\HomeMaster.js" />
+    <Content Include="js\Inicio.js" />
+    <Content Include="js\Login.js" />
     <Content Include="js\PageCarreras.js" />
     <Content Include="js\PageEstudiantes.js" />
     <Content Include="js\PageGestiones.js" />

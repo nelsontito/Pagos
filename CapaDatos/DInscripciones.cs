@@ -80,7 +80,11 @@ namespace CapaDatos
                         response.Valor = "warning";
                         response.Mensaje = "Mensualidad ya Cancelada.";
                         break;
-
+                    case 4:
+                        response.Estado = false;
+                        response.Valor = "warning";
+                        response.Mensaje = "Debe cancelar primero las cuotas anteriores.";
+                        break;
                     case 0:
                     default:
                         response.Estado = false;

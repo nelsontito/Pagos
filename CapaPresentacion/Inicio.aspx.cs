@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CapaEntida.Entidades;
+using CapaEntida.Responses;
+using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +15,12 @@ namespace CapaPresentacion
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        [System.Web.Services.WebMethod]
+        public static Respuesta<EInicio> ObtenerResumenDashboard()
+        {
+            return NInicio.GetInstance().ObtenerResumenDashboard();
         }
     }
 }

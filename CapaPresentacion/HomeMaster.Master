@@ -43,11 +43,14 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="javascript:void(0)" class="logo"><span>Sis</span>temas</a>
-                    <a href="javascript:void(0)" class="logo-sm"><span>S</span></a>
+                    <div class="text-center">
+                        <a href="Inicio.aspx" class="logo">
+                            <span>Mensualidades</span> 
+    </a>
+                    </div>
                     <!--<a href="index.html" class="logo"><img src="assets/images/logo_white_2.png" height="28"></a>-->
                     <!--<a href="index.html" class="logo-sm"><img src="assets/images/logo_sm.png" height="36"></a>-->
-                </div>
+                </div>      
             </div>
 
 
@@ -83,8 +86,12 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-divider"></li>
-                                <li><a href="javascript:void(0)" class="dropdown-item">Salir</a></li>
-                                <!-- <li><a id="close" class="dropdown-item" style="cursor: pointer;">Salir</a></li> -->
+                                
+                                <li>
+                                    <a id="close" class="dropdown-item" style="cursor: pointer;">
+                                        <i class="fas fa-sign-out-alt mr-2"></i>Salir
+    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -107,10 +114,12 @@
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle" id="rolnomme" data-toggle="dropdown" aria-expanded="false">Usuario Logeado</a>
                             <ul class="dropdown-menu">
-                                <li><a href="javascript:void(0)" class="dropdown-item">Perfil</a></li>
-                                <li><a href="javascript:void(0)" class="dropdown-item"><span class="badge badge-success float-right">5</span> Ajustes </a></li>
+                                <li>
+                                    <a href="javascript:void(0)" id="btnPerfil" class="dropdown-item">Perfil
+    </a>
+                                </li>
                                 <li class="dropdown-divider"></li>
-                                <li><a href="javascript:void(0)" class="dropdown-item">Salir</a></li>
+                                
                             </ul>
                         </div>
 

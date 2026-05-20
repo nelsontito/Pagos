@@ -45,6 +45,7 @@
     <Compile Include="NEstudiantes.cs" />
     <Compile Include="NGestiones.cs" />
     <Compile Include="NGrados.cs" />
+    <Compile Include="NInicio.cs" />
     <Compile Include="NInscripciones.cs" />
     <Compile Include="NUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

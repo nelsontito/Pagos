@@ -193,6 +193,60 @@ namespace CapaDatos
                 };
             }
         }
+
+        public Respuesta<EUsuarios> LoginUsuario(string Correo)
+        {
+            try
+            {
+                EUsuarios obj = null;
+
+                using (SqlConnection con = ConexionBD.GetInstance().ConexionDB())
+                {
+                    using (SqlCommand comando = new SqlCommand("usp_LoginUsuario", con))
+                    {
+                        comando.CommandType = CommandType.StoredProcedure;
+                        comando.Parameters.AddWithValue("@Correo", Correo);
+
+                        con.Open();
+                        using (SqlDataReader dr = comando.ExecuteReader())
+                        {
+                            if (dr.Read())
+                            {
+                                obj = new EUsuarios
+                                {
+                                    IdUsuario = Convert.ToInt32(dr["IdUsuario"]),
+                                    IdRol = Convert.ToInt32(dr["IdRol"]),
+                                    NombreUsuario = dr["NombreUsuario"].ToString(),
+                                    ApellidosUsuario = dr["ApellidosUsuario"].ToString(),
+                                    CiUsuario = dr["CiUsuario"].ToString(),
+                                    Correo = dr["Correo"].ToString(),
+                                    Contrasena = dr["Contrasena"].ToString(),
+                                    FotoUrl = dr["FotoUrl"].ToString(),
+                                    Estado = Convert.ToBoolean(dr["Estado"]),
+                                    NombreRol = dr["NombreRol"].ToString(),
+                                };
+                            }
+                        }
+                    }
+                }
+
+                return new Respuesta<EUsuarios>
+                {
+                    Estado = obj != null,
+                    Data = obj,
+                    Mensaje = obj != null ? "Bienvenido usuario" : "Usuario o Contraseña incorrectos."
+                };
+            }
+            catch (Exception)
+            {
+                return new Respuesta<EUsuarios>
+                {
+                    Estado = false,
+                    Mensaje = "Ocurrió un error en el servidor. Intente más tarde.",
+                    Data = null
+                };
+            }
+        }
     }
 
 }

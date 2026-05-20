@@ -41,5 +41,10 @@ namespace CapaNegocio
         {
             return DUsuarios.GetInstance().ListarUsuarios();
         }
+
+        public Respuesta<EUsuarios> LoginUsuario(string Correo)
+        {
+            return DUsuarios.GetInstance().LoginUsuario(Correo);
+        }
     }
 }
